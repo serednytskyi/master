@@ -24,6 +24,6 @@ runner = HTMLTestRunner.HTMLTestRunner(
     description="Smoke Tests"
 )
 
-xmlrunner.XMLTestRunner(verbosity=2, output='test-reports').run(smoke_tests)
-#runner.run(smoke_tests)
+#xmlrunner.XMLTestRunner(verbosity=2, output='test-reports').run(smoke_tests)
+runner.run(smoke_tests)
 #unittest.TextTestRunner(verbosity=2).run(smoke_tests)

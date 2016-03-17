@@ -15,9 +15,8 @@ class mysite_testCase_deployed(unittest.TestCase):
 
     def test_site_is_deployed(self):
         self.wait = WebDriverWait(self.driver, 10)
-        self.driver.get('file:///D:/site/index.html')
-        self.title = self.wait.until(EC.title_is("Super site"), "Page was not deployed")
-        #self.assertTrue(self.driver.title == "Super site", "Page was not deployed")
+        self.driver.get('http://serednytskyi.pro/')
+        self.title = self.wait.until(EC.title_is("Serednytskyi"), "Page was not deployed")
 
     @classmethod
     def tearDownClass(cls):
